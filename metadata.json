@@ -1,0 +1,6 @@
+{
+  "name": "Data Career & Portfolio Studio",
+  "description": "Master real-world data analyst and data engineering business cases, automated SQL/Python pipelines, predictive ML, LLM-augmented analytics, and portfolio project blueprints.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
