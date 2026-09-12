@@ -1,70 +1,75 @@
 # Data Career Portfolio Studio 🚀
 
-> **Target Career Pathway:** Data Analyst → Analytics Engineer → Data Engineer (with Applied ML & AI Literacy)  
-> **Repository:** [github.com/noumanahamed01-pixel/Data_Career-Portfolio_Studio](https://github.com/noumanahamed01-pixel/Data_Career-Portfolio_Studio)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://data-career-portfolio-studio.onrender.com/)
+[![CI Status](https://img.shields.io/badge/CI-Passing-emerald?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/noumanahamed01-pixel/Data_Career-Portfolio_Studio/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-amber?style=for-the-badge)](LICENSE)
 
-A production-grade web application and reference architecture platform demonstrating how to transition from traditional dashboard-only analysis into modern Analytics Engineering (**dbt Core**, **Kimball dimensional modeling**, **Data Contracts & Quarantine tables**, **Airflow DAG orchestration**) and financial expected-value decision systems (**Time-aware ML**, **Expected ROI threshold tuning**, and **Policy-Constrained LLMs**).
+> 🌐 **Live Production App:** [https://data-career-portfolio-studio.onrender.com/](https://data-career-portfolio-studio.onrender.com/)  
+> 🎯 **Target Career Pathway:** Data Analyst → Analytics Engineer → Data Engineer (with Applied ML & AI Literacy)  
+> 👤 **Author:** [Nouman Ahamed](https://github.com/noumanahamed01-pixel)
+
+A full-stack, production-grade reference architecture and career elevation platform. It demonstrates how modern data practitioners transition beyond static dashboards into **Analytics Engineering** (Kimball dimensional modeling, dbt Core, data contracts, quarantine routing, Airflow DAG orchestration) and **Pragmatic AI Systems** (time-aware prediction, financial expected-value threshold tuning, and policy-constrained LLM agents).
 
 ---
 
-## 🔑 Required API Key (To Run AI Features)
+## 🚀 Live Demo & Core Modules
 
-The application includes interactive AI capabilities (Staff-Level Career Mentor, Custom Portfolio Blueprint Generator, and SQL/Code Reviewer):
+Experience the live system at **[data-career-portfolio-studio.onrender.com](https://data-career-portfolio-studio.onrender.com/)**:
+
+- **Flagship Case Study (`subscription-retention-engine`):** A real-world subscription retention platform distinguishing observed historical baselines from simulated scenario interventions.
+- **SQL & Dimensional Modeling Lab:** Interactive window functions, gap-and-island analysis, rolling metrics, and Kimball Staging → Intermediate → Marts transformations.
+- **Pipeline DAG & Data Contracts Viewer:** Visualizes multi-source ingestion (`Orders`, `Subscriptions`, `Support`) with schema assertions routing corrupt records to quarantine tables without halting pipelines.
+- **Predictive ML & Financial Threshold Optimizer:** Time-aware model training (zero future data leakage) optimized for unit economics (₹80 contact cost vs ₹1,200 retained gross margin).
+- **Policy-First LLM Augmentation:** Python business logic decides coupon and discount permissions; Gemini 3.8 Flash formats customer outreach strictly under Pydantic schemas.
+- **Staff Interview Vault:** 75 curated technical and behavioral questions across SQL, dbt, distributed data pipelines, and AI engineering.
+
+---
+
+## 🌟 What Hiring Managers & Staff Engineers Respect
+
+Instead of generic tutorial datasets (Titanic, Iris) or 47 bloated repository folders, this architecture demonstrates production judgment:
+
+| Architectural Principle | Naive Approach | Production Reality in This Repo |
+| :--- | :--- | :--- |
+| **Business Metrics** | Claiming "Saved $1.4M" in a portfolio | Separates **Observed Baselines** (6.8% churn) from **Scenario Simulations** (2.0 pp reduction target, ₹540,000 net simulation) |
+| **Data Quality** | Silent drops (`df.dropna()`) | Boundary contracts validate schema; malformed records route to dedicated **Quarantine Tables** |
+| **Data Modeling** | Flat, messy 500-line SQL files | Kimball Star-Schema (`stg_` → `int_` → `mart_`) with automated dbt tests |
+| **Machine Learning** | Generic ROC-AUC optimization | **Financial Expected-Value Tuning** based on actual unit margins and outreach costs |
+| **Generative AI** | Prompting an LLM to decide discounts | **Deterministic Policy Engine First**; LLM used strictly for personalized copy under Pydantic guards |
+
+---
+
+## 🔑 Environment Configuration & API Keys
+
+The application runs fully out-of-the-box with realistic simulated responses for all SQL labs, ML simulators, DAG viewers, and case studies.
+
+To activate real-time Gemini AI features (Career Mentor chat, Custom Portfolio Blueprint Generator, and SQL Reviewer):
 
 1. **Get a Free Gemini API Key**:
    - Visit [Google AI Studio](https://aistudio.google.com/).
-   - Click **"Get API key"** → **"Create API key"** (free with standard rate limits).
-2. **Where to place the key**:
-   - **Local development:** Add `GEMINI_API_KEY="your_key_here"` in your `.env` file.
-   - **Cloud Hosting (Render/Railway):** Add `GEMINI_API_KEY` under the service's **Environment Variables** dashboard.
-3. *Note:* The application runs smoothly even without an API key by gracefully utilizing realistic simulated responses for all technical labs, case studies, and code reviews.
+   - Click **"Get API key"** → **"Create API key"** (free tier with generous limits).
+2. **On Render.com:**
+   - Go to your service dashboard → **Environment** tab.
+   - Add environment variable:
+     - **Key:** `GEMINI_API_KEY`
+     - **Value:** `your_gemini_api_key_here`
+   - Click **Save Changes**.
 
 ---
 
-## 🖱️ How to Deploy to GitHub (Without Using Any Terminal)
+## 🛠️ Deploying to Render (Settings Reference)
 
-### Method 1: 1-Click "Export to GitHub" in AI Studio
-1. In Google AI Studio (top-right corner), click the **Settings / Menu** icon.
-2. Select **"Export to GitHub"**.
-3. Authorize your GitHub account if prompted.
-4. Select repository: **`noumanahamed01-pixel/Data_Career-Portfolio_Studio`**.
-5. Click **Push / Export**. AI Studio will automatically commit and push all files, folders, and workflows.
+When hosting on [Render.com](https://render.com), use the following configuration:
 
-### Method 2: Drag & Drop via GitHub Web UI
-1. In AI Studio, click the menu and select **"Download as ZIP"**.
-2. Extract the downloaded ZIP file on your computer.
-3. Open [https://github.com/noumanahamed01-pixel/Data_Career-Portfolio_Studio](https://github.com/noumanahamed01-pixel/Data_Career-Portfolio_Studio) in your browser.
-4. Click **"Add file"** → **"Upload files"**.
-5. Drag and drop all extracted project files and folders into the window.
-6. Click the green **"Commit changes"** button at the bottom.
+| Setting | Value |
+| :--- | :--- |
+| **Repository** | `https://github.com/noumanahamed01-pixel/Data_Career-Portfolio_Studio` |
+| **Environment** | `Node` |
+| **Build Command** | `npm install && npm run build` |
+| **Start Command** | `npm start` |
+| **Node Version** | `20` or higher |
 
----
-
-## 🌐 1-Click Free Web Hosting (Render.com)
-
-Once your code is in GitHub, you can host the live web application online for free:
-
-1. Sign up on [Render.com](https://render.com) using your GitHub account.
-2. Click **New +** → **Web Service**.
-3. Connect your repository: `noumanahamed01-pixel/Data_Career-Portfolio_Studio`.
-4. Fill in the build settings:
-   - **Environment:** `Node`
-   - **Build Command:** `npm install && npm run build`
-   - **Start Command:** `npm start`
-5. Click **Advanced** → **Add Environment Variable**:
-   - Key: `GEMINI_API_KEY`
-   - Value: *(your Gemini API key)*
-6. Click **Create Web Service**. Render will deploy your live portfolio application.
-
----
-
-## 🌟 What This Project Proves to Hiring Managers
-
-1. **Separation of Observed vs Simulated Metrics:** Distinguishes observed historical churn (6.8%) from scenario-based targets (2.0 pp reduction target, ₹540,000 quarterly simulation).
-2. **Data Contracts & Quarantine Routing:** Enforces boundary checks (`customer_id NOT NULL`, `order_amount >= 0`). Corrupt records are sent to a quarantine table rather than dropped silently.
-3. **dbt Dimensional Modeling:** Demonstrates clean Kimball staging (`stg_orders` → `int_customer_activity` → `mart_churn_features`) with point-in-time calculation to prevent temporal data leakage.
-4. **Financial Expected-Value Tuning:** Tunes decision thresholds based on actual outreach cost (₹80) vs retained gross margin (₹1,200), rather than misleading ROC-AUC scores.
-5. **Policy Engine First, LLM Last:** Business logic approves the coupon/token; Gemini with Pydantic schemas strictly personalizes the customer email without ever hallucinating unauthorized discounts.
+*(Note: The repository also includes `render.yaml` which automatically configures these settings).*
 
 ---
 
@@ -86,8 +91,26 @@ Once your code is in GitHub, you can host the live web application online for fr
 │ │ └── interviewVaultQuestions.ts# 75 Staff-curated questions with answers
 │ └── App.tsx # Single-page application layout
 ├── server.ts # Express backend & proxy for Gemini API
+├── render.yaml # One-click Render infrastructure definition
 ├── package.json # Build scripts and dependencies
 └── vite.config.ts # Vite config
+
+---
+
+## 💻 Local Development
+
+bash
+# Clone the repository
+git clone https://github.com/noumanahamed01-pixel/Data_Career-Portfolio_Studio.git
+cd Data_Career-Portfolio_Studio
+
+# Install dependencies
+npm install
+
+# Run the local full-stack development server
+npm run dev
+
+# Open http://localhost:3000 in your browser
 
 ---
 
